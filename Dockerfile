@@ -7,7 +7,9 @@ ENV OPENAI_API_KEY='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'
 
 COPY ./requirements.txt /app/requirements.txt
 
+RUN apt-get update && apt-get install apt-utils
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+RUN pip install --upgrade pip
 
 RUN apt-get update && apt-get install -y ffmpeg
 
