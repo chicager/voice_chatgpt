@@ -3,6 +3,7 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.10-slim
 WORKDIR /
 
 ENV MAX_WORKERS=5
+ENV PIP_ROOT_USER_ACTION=ignore
 ENV OPENAI_API_KEY='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'
 
 COPY ./requirements.txt /app/requirements.txt
