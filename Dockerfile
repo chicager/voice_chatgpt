@@ -4,7 +4,7 @@ WORKDIR /
 
 ENV MAX_WORKERS=5
 ENV PIP_ROOT_USER_ACTION=ignore
-ENV OPENAI_API_KEY='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'
+ENV OPENAI_API_KEY='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'
 
 COPY ./requirements.txt /app/requirements.txt
 
